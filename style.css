@@ -1,0 +1,121 @@
+ /* common section */
+    body{
+        background: white;
+        font-family: 'Poppins', sans-serif;
+font-family: 'Work Sans', sans-serif;
+    }
+
+
+   /*header start*/
+   .header{
+    background-color: rgba(255, 144, 14, 0.1);
+   
+   }
+
+/*navigation section*/
+     .navigation-section{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 35px;
+      padding-left: 150px;
+      padding-right: 100px;
+     }
+.company-name{
+   
+}
+
+     .right-nav{
+        display: flex;
+     }
+     .top-button{
+           padding-right: 50px;
+           font-size: 14px;
+          }
+
+     /*navigation end*/
+
+     .main-header-details{
+        padding-left: 385px;
+        padding-right: 430px;
+        align-items: center;
+        
+     }
+     .main-header-title{
+        text-align: center;
+     }
+     .main-header-info{
+        text-align: center;
+        font-size: 10px;
+        color: #727272;
+     }
+     .explore-button{
+        text-align: center;
+        color: white;
+        padding-top: 20px;
+        
+     }
+     .explore-button button{
+        background: 
+        #FF900E;
+        color: white;
+        border:0;
+        border-radius: 5px;
+        height: 40px;
+        width: 120px;
+        font-weight: 400;
+        font-size: 15px;
+     }
+     
+       .header-banner img{
+        width: 1200px;
+        height: 600px;
+        padding-left: 150px;
+        padding-right: 145px;
+        padding-top: 40px;
+       }
+
+
+
+     /*header end*/
+
+
+
+/*media queries for mobile*/
+@media  screen and (max-width:576px) {
+    .header{
+      
+        width:1400px;
+        position: relative;
+        
+    }
+    .navigation-section{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding-right: 330px;
+    }
+    .right-nav{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+   .main-header-details{
+    
+   }
+   .company-name, .left-nav, .top-button{
+    text-align: center;
+   }
+   .main-header{
+    padding-right:150px;
+   }
+   .header-banner img{
+     position: relative;
+     right: 106px;
+     padding-left: 100px;
+     
+   }
+
+ }
+
+
+
+
