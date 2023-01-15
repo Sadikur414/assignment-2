@@ -6,116 +6,179 @@ font-family: 'Work Sans', sans-serif;
     }
 
 
-   /*header start*/
+   /*header start     width: 1916px;
+      height: 1337px;*/
    .header{
-    background-color: rgba(255, 144, 14, 0.1);
+      position: absolute;
+    width: 100%;
+left: 0px;
+top: 20px;
+background: rgba(255, 144, 14, 0.1);
    
    }
 
-/*navigation section*/
-     .navigation-section{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding-top: 35px;
-      padding-left: 150px;
-      padding-right: 100px;
+   /*nav section*/
+   .navigation-section{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+  .left-nav{
+   margin-left: 200px;
+  }
+   .right-nav{
+      display: flex;
+      margin-right: 150px;
+   }
+   .top-button{
+      margin-right: 20px;
+   }
+
+
+/*company details section*/
+
+   .company-details{
+      margin-left: 284px;
+      margin-right: 216px;
+   }
+   .company-info{
+      margin-bottom: 25px;
+   }
+   .explore-btn{
+      margin-bottom: 25px;
+   }
+     .company-banner{
+         margin-left: 220px;
+         margin-right: 180px;
+         margin-top: 30px;
+         margin-bottom: 50px;
      }
-.company-name{
-   
+   .company-banner img{
+      width: 700px;
+   }
+
+      /*company features*/
+   .features{
+      position: absolute;
+      margin-top: 800px;
+      margin-left: 230px;
+      margin-right: 200px;
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      column-gap: 10px;
+      row-gap: 80px;
+   }
+   .image-sec{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 20px;
+   }
+  
+
+/*article setcion start*/
+.article-container{
+   position: absolute;
+   margin-top: 1280px;
+   margin-bottom: 40px;
+}
+.article-section{
+   margin-left: 190px;
+   margin-right: 190px;
+   display: flex;
+}
+.artile{
+
 }
 
-     .right-nav{
-        display: flex;
-     }
-     .top-button{
-           padding-right: 50px;
-           font-size: 14px;
-          }
 
-     /*navigation end*/
+/*font section*/
+.font-section{
+   display: flex;
+   margin-left: 240px;
+    margin-top: 35px;
+    margin-bottom: 50px;
+}
 
-     .main-header-details{
-        padding-left: 385px;
-        padding-right: 430px;
-        align-items: center;
-        
-     }
-     .main-header-title{
-        text-align: center;
-     }
-     .main-header-info{
-        text-align: center;
-        font-size: 10px;
-        color: #727272;
-     }
-     .explore-button{
-        text-align: center;
-        color: white;
-        padding-top: 20px;
-        
-     }
-     .explore-button button{
-        background: 
-        #FF900E;
-        color: white;
-        border:0;
-        border-radius: 5px;
-        height: 40px;
-        width: 120px;
-        font-weight: 400;
-        font-size: 15px;
-     }
-     
-       .header-banner img{
-        width: 1200px;
-        height: 600px;
-        padding-left: 150px;
-        padding-right: 145px;
-        padding-top: 40px;
-       }
+.first-font{
+   border: 1px solid orange;
+   width: 120px;
+   border-radius: 5px;
+   margin-right: 35px;
+   text-align: center;
+   
+
+}
+
+/*sponser*/
+
+.sponsor-title{
+   margin-bottom: 30px;
+}
+.sponsor-company{
+   display: flex;
+   margin-left: 300px;
+   margin-bottom: 60px;
+}
+.brand-logo img{
+   width: 70px;
+   height: 33px;
+   margin-right: 50px;
+}
 
 
+/*footer  section*/
+  .fotter{
+   margin-left: 260px;
+   background-color: bisque;
+   width: 600px;
+   height: 70px;
+   border-radius: 5px;
+   margin-bottom: 100px;
+   justify-content: center;
+  }
 
-     /*header end*/
 
-
-
-/*media queries for mobile*/
-@media  screen and (max-width:576px) {
-    .header{
+   /*small device*/
+   @media  screen and (max-width:688px) {
+      .navigation-section{
+       display: grid;
+       grid-template-columns: 1fr;
+       justify-items: center;
+      }
+      .left-nav{
+         margin-right: 150px;
+      }
+      .right-nav{
+         display: grid;
+         grid-template-columns: 1fr;
+         margin-left: 180px;
+      }
+   .left-nav, .right-nav{
+      justify-items: center;
       
-        width:1400px;
-        position: relative;
-        
-    }
-    .navigation-section{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        padding-right: 330px;
-    }
-    .right-nav{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-    }
-   .main-header-details{
+   }
+   .company-info{
+      padding-left: 100px;
+      padding-right: 100px;
+   }
+   .company-banner{
+      padding-left: 50px;
+      padding-right:50px ;
+   }
+
+   /*features section start*/
+   .features{
+      margin-bottom: 50px;
+   }
+   .image-sec{
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+   }
+   .features-list{
+      display:grid;
+       grid-template-columns: 1fr;
+   }
     
+
+   /*features section end*/
    }
-   .company-name, .left-nav, .top-button{
-    text-align: center;
-   }
-   .main-header{
-    padding-right:150px;
-   }
-   .header-banner img{
-     position: relative;
-     right: 106px;
-     padding-left: 100px;
-     
-   }
-
- }
-
-
-
-
